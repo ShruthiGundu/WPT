@@ -1,0 +1,13 @@
+<html>
+    <head>
+        <script>
+            var numArr = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
+            var sum = numArr.reduce((acc,num) => acc + num, 0)
+            var avg = sum / numArr.length
+            var aboveAvgCount = numArr.filter(num => num > avg).length
+            console.log("Numbers Array: " + numArr)
+            console.log("Average of all numbers: " + avg)
+            console.log("Numbers above average: " + aboveAvgCount)
+        </script>
+    </head>
+</html>

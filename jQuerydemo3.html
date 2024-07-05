@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+       <script>
+        $(document).ready(function(){
+           /* $('#btn1').click(function(){
+                console.log("Button Clicked!!")
+            })*/
+
+            /*$('#btn1').click(function(){
+                $("p").html("New content")
+            })*/
+
+           /* $("p").click(function(){
+                $(this).css("color", "blue")
+            })*/
+
+           /* $("div").mouseover(function(){
+                $(this).css("background-color","yellow")
+            })
+
+            $("div").mouseout(function(){
+                $(this).css("background-color","white")
+            })
+
+            $("div").mouseup(function(e){
+                $(this).html("x coor " + e.pageX + " y-coor " + e.pageY)
+            })*/
+            
+            $("#btn1").on("click",function(){
+                console.log("Button clicked")
+            })
+
+           /* $("div").on("mouseout mouseover mouseup",function(){
+                mouseover: $(this).css("background-color","yellow")
+                mouseout: $(this).css("background-color","white")
+            })*/
+
+            
+        });
+       </script>
+    </head>
+    <body>
+        <h1>jQuery Enabled</h1>
+        <p class="c1">Paragraph-1</p>
+        <p id="n1">Paragraph-2</p>
+        <p>Paragraph-3</p>
+        <div>This is div</div>
+        <!--
+        <div>
+        <p>First Paragraph</p>
+        <p>Second Paragraph</p>
+        <p>Third Paragraph</p>
+        <p>Fourth Paragraph</p>
+        <p>Fifth Paragraph</p>
+        <p>Sixth Paragraph</p>
+        </div>
+        <p>Seventh Paragraph</p>
+        <h2 class="c1">Header2</h2>-->
+        <button id="btn1">Show</button>
+    </body>
+</html>

@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <script>
+            class Rectangle{
+                constructor(length, breadth){
+                    this.length = length
+                    this.breadth = breadth
+                }
+
+                calculateArea(){
+                    return this.length * this.breadth
+                }
+
+                calculatePerimeter(){
+                    return 2 * (this.length + this.breadth)
+                }
+                displayInfo(){
+                    console.log("Area: " + this.calculateArea())
+                    console.log("Perimeter: " + this.calculatePerimeter())
+                }
+            }
+            let rect = [new Rectangle(4,3),
+                        new Rectangle(5,2),
+                        new Rectangle(2,6),
+                        new Rectangle(4,8),
+                        new Rectangle(3,1)
+            ];
+            rect.forEach(rectangle => {rectangle.displayInfo()})
+        </script>
+    </head>
+</html>

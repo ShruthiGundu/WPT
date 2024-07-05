@@ -1,0 +1,27 @@
+jQuery tags and selector tags and animation tags
+
+jQuery src link: "https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+
+$('p').css("color", "red") --> selects all paragraphs and displays that in red color
+
+$('h1').css({"color":"blue","background-color":"yellow:}) --> selects all h1 and displays its text in blue and bgcolor in yellow
+
+$('div p').length --> selects all the paras which present in div and displays the length
+
+$('div p').css("color","red") --> selects all the paras in div and displays in red color
+
+$("#n1").css("backgroung-color","yellow") --> selects the item which has id as n1 and changes its bgcolor to yellow
+
+$(".c1").css("color","red") --> selects items which has class c1 and displays it in red color
+
+$('h1').hide() --> selects all h1 and hides it immediately
+
+$('h1').show() --> selects all h1 and shows it immediately
+
+$('h1').hide(5000) --> selects all h1 and hides it in 5000ms or 5sec
+
+$('h1').show(7000) --> selects all h1 and shows it in 7000ms or 7sec
+
+$('h1').slideup(10000) --> selects all h1 and its slidesup in 10000ms or 10sec
+
+$('h1').slideDown(10000) --> selects all h1 and it will slidesdown in 10000ms or 10sec

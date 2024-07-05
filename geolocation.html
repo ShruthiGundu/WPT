@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <script>
+            function f1(){
+                var geoLocation = navigator.geolocation
+                geoLocation.getCurrentPosition(showPosition)
+            }
+            function showPosition(position){
+                var lat = position.coords.latitude
+                var long = position.coords.longitude
+                document.getElementById("p1").innerHTML = lat +"  "+long
+            }
+        </script>
+    </head>
+<body>
+    <button onclick="f1()">Get Coordinates</button>
+    <p id="p1"></p>
+</body>
+</html>

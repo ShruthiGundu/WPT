@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <script>
+            function f1(){
+                var list = document.getElementsByName("course")
+                for(i = 0; i < list.length;i++){
+                    if(list[i].checked)
+                    document.write("you choose" + list[i].value + "module")
+                }
+
+            }
+        </script>
+    </head>
+    <body>
+        <form>
+            Module:
+            <input type="radio" name="course" value="DAC">DAC <br>
+            <input type="radio" name="course" value="DIoT">DIoT <br>
+            <input type="radio" name="course" value="DASSD">DASSD <br>
+            <input type="radio" name="course"value="DBDA">DBDA <br>
+            <button onclick="f1()">Which course?</button>
+        </form>
+    </body>
+</html>

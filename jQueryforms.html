@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $(":button").click(function(){
+                    var fn = $("#fname").val()
+                    var ln = $("#lname").val()
+                    $("#p1").html("Welcome " + fn + " " + ln)
+                })
+                
+            });
+        </script>
+    </head>
+    <body>
+        <h1>jQuery Enabled</h1>
+
+        <form>
+            First Name : <input id="fname"><br>
+            Last Name : <input id="lname"><br>
+            <!--
+            Username : <input><br>
+            Password : <input type="password" id="pass"><br>
+            Gender : <input type="radio" name="r1">Male
+            <input type="radio" name="r1">Female <br>
+            Address : <textarea></textarea><br>-->
+            <input type="button" value="show">
+            <p id="p1"></p>
+        </form>
+    </body>
+</html>

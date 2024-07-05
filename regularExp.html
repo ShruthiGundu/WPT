@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <script>
+            function f1(){
+                var uname = document.getElementById("uname").value
+                var re = /^[a-zA-Z]*$/
+
+                if(re.test(uname))
+                    alert("Username is valid")
+                else
+                    alert("Username must contain alphabets only")
+
+            }
+            function f2(){
+                var zip = document.getElementById("zip").value
+                var re = /^d{6}$/
+                if(re.test(zip))
+                    alert("zipcode is valid")
+                else
+                    alert("zipcode is invalid")
+            }
+        </script>
+    </head>
+    <body>
+        <form>
+            Username : <input type="text" id="uname"><br>
+            Zipcode : <input type="text" id="zip">
+            <button onclick="f2()" type="button">Validate</button>
+        </form>
+    </body>
+</html>

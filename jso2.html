@@ -1,0 +1,22 @@
+<html>
+    <head>
+    <script>
+    let employees = []
+    function storeEmployeeNames(){
+        for(let i = 0; i < 5; i++){
+            let name = prompt("Enter the name of employee " + (i + 1) + ":")
+            employees.push(name)
+        }
+    }
+    function displaySortedNames(){
+        employees.sort()
+        console.log("Employees in sorted order : ")
+        employees.forEach((employee,index) => {
+            console.log(index + 1 + "." + employee)
+        });
+    }
+    storeEmployeeNames()
+    displaySortedNames()
+</script>
+    </head>
+</html>

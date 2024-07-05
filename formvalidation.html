@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <style>
+            span{color: red;}
+        </style>
+        <script>
+            function validateUsername(){
+                var uname = document.getElementById("uname").value
+                if(uname == null || uname.length == 0 || uname == ""){
+                    document.getElementById("s1").innerHTML ="Username is required";
+                    return false;
+                }
+                else if(uname.length < 5){
+                    document.getElementById("s1").innerHTML = "Username must be minimum 5 chars";
+                    return false;
+                }
+                return true
+            }
+
+            function validatePasssword(){
+            var pass = document.getElementById("pass").value
+                if(pass == null || pass.length == 0 || pass == ""){
+                    document.getElementById("s2").innerHTML ="Password is required";
+                    return false;
+                }
+                else if(pass.length < 8 || pass.length > 10){
+                    document.getElementById("s2").innerHTML = "Password must be 8 to 10 chars";
+                    return false;
+                }
+                return true;
+            }
+            function validate(){
+                if(validateUsername() && validatePasssword())
+                    return true
+                else
+                    return false
+            }
+
+
+           /* var age = document.getElementById("age").value
+            if(age == null || age.length == 0 || age == "")
+            alert("User Age is required")
+            else if(isNaN(age))
+            alert("Age must be a numeric quantity")*/
+        </script>
+    </head>
+    <body>
+        <form onsubmit="return validate()">
+            Username : <input type="text" id="uname"> 
+            <span id="s1"></span><br>
+            Password : <input type="password" id="pass">
+            <span id="s2"></span><br>
+            <input type="submit" 
+                value="login">
+        </form>
+    </body>
+</html>
